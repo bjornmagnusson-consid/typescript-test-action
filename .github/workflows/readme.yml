@@ -1,12 +1,10 @@
-name: Update README
-
+name: Update README.md
 on:
   push:
     branches:
-      - "**"
+      - main
     paths:
-      - action.tml
-      - .github/workflows/update-readme.yml
+      - action.yml
   workflow_dispatch:
 
 jobs:
@@ -15,13 +13,12 @@ jobs:
     permissions:
       contents: write
       pull-requests: write
-
     steps:
       - name: Checkout
         uses: actions/checkout@v3
 
       - name: Update README.md
-        uses: ./
+        uses: mdvorak/update-action-readme@v1
 
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v4
