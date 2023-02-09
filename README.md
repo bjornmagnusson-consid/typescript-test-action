@@ -3,9 +3,19 @@
 </p>
 
 <!--(inputs-start)-->
+
+| Name  | Required | Default | Description |
+| :---: | :------: | :-----: | ----------- |
+| `milliseconds` | true | default value if applicable | input description here |
+
 <!--(inputs-end)-->
 
 <!--(outputs-start)-->
+
+| Name  | Description |
+| :---: | ----------- |
+|  |
+
 <!--(outputs-end)-->
 
 # Create a JavaScript Action using TypeScript
