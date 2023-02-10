@@ -12,3 +12,4 @@ jobs:
       - uses: haya14busa/action-update-semver@v1
         with:
           tag: ${{ github.event.release.tag_name }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
