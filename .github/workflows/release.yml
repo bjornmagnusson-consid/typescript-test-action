@@ -11,6 +11,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: haya14busa/action-update-semver@v1
-        with:
-          tag: ${{ github.event.release.tag_name }} 
+      - uses: vweevers/additional-tags-action@v2
